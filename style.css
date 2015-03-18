@@ -50,6 +50,9 @@ i {
 .floatleft {
 	float: left;
 }
+.floatleft2 {
+	float: left;
+}
 .main {
 	text-align: center;
 }
@@ -60,11 +63,14 @@ i {
 	margin: 0 5px;
 }
 .main ul li a {
-	color: #6e4c93;
+	color: #5F96B5;
 	padding: 0 10px;
 }
+a:hover {
+	background: #c0c0c0;
+}
 .intro {
-	background: #000;
+	background: #73B6DB;
 	color: #fff;
 	margin-top: 20px;
 	text-align: center;
@@ -112,15 +118,14 @@ img {
 	width: 95%;
 }
 h1, button, nav, a {
-	color: #6e4c93;
+	color: #5F96B5;
 }
 .cleardisc {
 	list-style-type: none;
 }
 .fa-trophy {
 	font-size: 90px;
-	color: #fff;
-	background: #C9C9C9;
+	color: #5F96B5;
 	padding: 30px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
@@ -128,8 +133,7 @@ h1, button, nav, a {
 }
 .fa-line-chart {
 	font-size: 90px;
-	color: #fff;
-	background: #C9C9C9;
+	color: #5F96B5;
 	padding: 30px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
@@ -137,10 +141,31 @@ h1, button, nav, a {
 }
 .fa-code {
 	font-size: 90px;
-	color: #fff;
-	background: #C9C9C9;
+	color: #5F96B5;
 	padding: 30px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
 	margin-bottom: 20px;
+}
+
+/*Media Queries */
+
+@media (max-width: 720px) {
+	.floatleft2 {
+		float: none;
+		margin: 0 auto;
+	}
+	.floatleft {
+		float: none;
+	}
+}
+@media (max-width: 600px) {
+	.fa {
+		font-size: 2em;
+	}
+}
+@media (max-width: 550px) {
+	.main {
+		display: block;
+	}
 }
