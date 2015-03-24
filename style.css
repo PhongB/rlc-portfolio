@@ -53,6 +53,9 @@ i {
 .floatleft {
 	float: left;
 }
+.floatleft2 {
+	float: left;
+}
 .main {
 	text-align: center;
 	background: #1e78bd;
@@ -64,12 +67,24 @@ i {
 	cursor: pointer;
 }
 .main ul li a {
+<<<<<<< HEAD
 	color: #fff;
 	padding: 10px;
 	text-decoration: none;
+=======
+	color: #5F96B5;
+	padding: 0 10px;
+>>>>>>> origin/master
+}
+a:hover {
+	background: #c0c0c0;
 }
 .intro {
+<<<<<<< HEAD
 	background: #1e78bd;
+=======
+	background: #73B6DB;
+>>>>>>> origin/master
 	color: #fff;
 	margin-top: 20px;
 	text-align: center;
@@ -113,12 +128,21 @@ button {
 	font-weight: bold;
 	margin: 0 auto;
 }
+<<<<<<< HEAD
 h1, button, nav {
 	color: #1e78bd;
+=======
+img {
+	width: 95%;
+}
+h1, button, nav, a {
+	color: #5F96B5;
+>>>>>>> origin/master
 }
 .cleardisc {
 	list-style-type: none;
 }
+<<<<<<< HEAD
 .fa-wifi {
 	font-size: 30px;
 	color: #1e78bd;
@@ -205,4 +229,51 @@ h1, button, nav {
 	text-decoration: none;
 	color: #000;
 }
+=======
+.fa-trophy {
+	font-size: 90px;
+	color: #5F96B5;
+	padding: 30px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+.fa-line-chart {
+	font-size: 90px;
+	color: #5F96B5;
+	padding: 30px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+.fa-code {
+	font-size: 90px;
+	color: #5F96B5;
+	padding: 30px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+>>>>>>> origin/master
+}
+
+/*Media Queries */
+
+@media (max-width: 720px) {
+	.floatleft2 {
+		float: none;
+		margin: 0 auto;
+	}
+	.floatleft {
+		float: none;
+	}
+}
+@media (max-width: 600px) {
+	.fa {
+		font-size: 2em;
+	}
+}
+@media (max-width: 550px) {
+	.main {
+		display: block;
+	}
 }
