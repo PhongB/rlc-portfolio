@@ -13,12 +13,16 @@ body {
 	clear: both;
 }
 .center {
-	text-align: center;
-	margin: 0 auto;
+	margin: 0 50%;
+}
+.credit {
+	float: left;
+}
+.social {
+	float: right;
 }
 .wrapper {
 	width: 100%;
-	margin: 0 auto;
 }
 h1 {
 	font-size: 50px;
@@ -30,6 +34,8 @@ h2 {
 	font-size: 24px;
 	text-align: center;
 	font-family: 'Playfair Display', serif;
+	background: #1e78bd;
+	padding: 5px 20%;
 }
 h3 {
 	font-size: 28px;
@@ -51,24 +57,24 @@ header {
 	margin-bottom: -16px;
 }
 i {
-	margin: 0 auto;
+	margin: 0 20%;
 }
 .main {
 	text-align: center;
 	background: #1e78bd;
+	font-size: 24px;
 }
 .main ul {
 	margin: 0 auto;
 }
 .main ul li {
-	padding: 5px 0;
+	padding: 10px;
 }
 .main ul li:hover {
 	cursor: pointer;
 }
 .main ul li a {
 	color: #fff;
-	padding: 10px;
 	text-decoration: none;
 }
 .home {
@@ -105,27 +111,30 @@ i {
 	margin-top: 20px;
 	text-align: center;
 }
-.section1 {
-	margin: 20px 0px;
-	padding-right: 30px;
-}
-.section1 div{
-	width: 80%;
-}
 .content div {
 	padding-top: 20px;
 }
-.portfolio div {
+.portfolio {
 	width: 80%;
+	margin: 0 5%;
+	border-radius: 15px;
+	text-align: justify;
+}
+.portfolio div {
+	margin-bottom: -50px;
+}
+.blog {
+	width: 80%;
+	margin: 0 5%;
+	border-radius: 15px;
+	text-align: justify;
 }
 .blog div {
+	margin-bottom: -50px;
+}
+footer div {
 	width: 80%;
-}
-footer {
-	background: #1e78bd;
-}
-footer div:nth-child(1) {
-	padding: 5px;
+	margin: 0 10%;
 }
 footer ul {
 	margin-left: 5px;
@@ -133,19 +142,19 @@ footer ul {
 footer ul li {
 	margin: 0 20px;
 	list-style-type: disc;
+	padding: 3px 0;
 }
 footer ul li a {
 	color: #fff;
 }
 button {
 	cursor: pointer;
-	margin: 0 auto;
+	margin: 0 10%;
 	text-decoration: underline;
 	border: 0;
 	background: none;
 	padding: 15px 5px;
 	font-weight: bold;
-	margin: 0 auto;
 }
 h1, button, nav {
 	color: #1e78bd;
@@ -154,49 +163,56 @@ h1, button, nav {
 	list-style-type: none;
 }
 .fa-wifi {
-	font-size: 30px;
-	color: #1e78bd;
-	padding: 10px;
+	font-size: 120px;
+	background: #1e78bd;
+	color: #fff;
+	padding: 5px 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
 .fa-paint-brush {
-	font-size: 30px;
-	color: #1e78bd;
-	padding: 10px;
+	font-size: 120px;
+	background: #1e78bd;
+	color: #fff;
+	padding: 5px 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
 .fa-video-camera {
-	font-size: 30px;
-	color: #1e78bd;
-	padding: 10px;
+	font-size: 120px;
+	background: #1e78bd;
+	color: #fff;
+	padding: 5px 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 }
-@media (min-width: 660px) {
-
+footer {
+	background: #1e78bd;
 }
-@media (min-width: 560px) {
-	.blogfloat {
+@media (min-width: 660px) {
+	.portfolio {
+		width: 40%;
 		float: left;
 	}
-	footer {
-		display: block;
+	.blog {
+		width: 40%;
+		float: right;
 	}
-	br {
-		display: none;
-	}
+}
+@media (min-width: 560px) {
 	.break {
 		display: block;
 	}
 }
 @media (min-width: 526px) {
-	.floatfoot {
-		float: left;
-	}
+
 }
 @media (min-width: 380px) {
+	.main {
+		-webkit-box-shadow: 2px 2px 2px 2px #787878;
+		box-shadow: 2px 2px 2px 2px #787878;
+		font-size: 20px;
+	}
 	.home {
 		border-top: 2px solid #bd4646;
 		border-left: none;
@@ -240,5 +256,11 @@ h1, button, nav {
 		display: inline-block;
 		text-decoration: none;
 		color: #000;
+	}
+	footer {
+		margin-top: 50px;
+	}
+	footer div {
+		width: 20%;
 	}
 }
