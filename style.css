@@ -11,7 +11,10 @@ body {
 }
 .clear {
 	clear: both;
+}
+.center {
 	text-align: center;
+	margin: 0 auto;
 }
 .wrapper {
 	width: 100%;
@@ -50,12 +53,6 @@ header {
 i {
 	margin: 0 auto;
 }
-.floatleft {
-	float: left;
-}
-.floatleft2 {
-	float: left;
-}
 .main {
 	text-align: center;
 	background: #1e78bd;
@@ -63,28 +60,47 @@ i {
 .main ul {
 	margin: 0 auto;
 }
+.main ul li {
+	padding: 5px 0;
+}
 .main ul li:hover {
 	cursor: pointer;
 }
 .main ul li a {
-<<<<<<< HEAD
 	color: #fff;
 	padding: 10px;
 	text-decoration: none;
-=======
-	color: #5F96B5;
-	padding: 0 10px;
->>>>>>> origin/master
 }
-a:hover {
-	background: #c0c0c0;
+.home {
+	border-left: 5px solid #bd4646;
+}
+.home:hover {
+	background: #bd4646;
+	transition: all 80ms ease;
+}
+.gallery {
+	border-left: 5px solid #9d46bd;
+}
+.gallery:hover {
+	background: #9d46bd;
+	transition: all 80ms ease;
+}
+.about {
+	border-left: 5px solid #46bd57;
+}
+.about:hover {
+	background: #46bd57;
+	transition: all 80ms ease;
+}
+.contact {
+	border-left: 5px solid #ce9100;
+}
+.contact:hover {
+	background: #ce9100;
+	transition: all 80ms ease;
 }
 .intro {
-<<<<<<< HEAD
 	background: #1e78bd;
-=======
-	background: #73B6DB;
->>>>>>> origin/master
 	color: #fff;
 	margin-top: 20px;
 	text-align: center;
@@ -96,17 +112,20 @@ a:hover {
 .section1 div{
 	width: 80%;
 }
-.content section {
+.content div {
 	padding-top: 20px;
 }
 .portfolio div {
 	width: 80%;
 }
-.blog article {
+.blog div {
 	width: 80%;
 }
 footer {
 	background: #1e78bd;
+}
+footer div:nth-child(1) {
+	padding: 5px;
 }
 footer ul {
 	margin-left: 5px;
@@ -128,21 +147,12 @@ button {
 	font-weight: bold;
 	margin: 0 auto;
 }
-<<<<<<< HEAD
 h1, button, nav {
 	color: #1e78bd;
-=======
-img {
-	width: 95%;
-}
-h1, button, nav, a {
-	color: #5F96B5;
->>>>>>> origin/master
 }
 .cleardisc {
 	list-style-type: none;
 }
-<<<<<<< HEAD
 .fa-wifi {
 	font-size: 30px;
 	color: #1e78bd;
@@ -165,12 +175,10 @@ h1, button, nav, a {
 	border-radius: 10px;
 }
 @media (min-width: 660px) {
-	footer div:nth-child(2) {
-		float: left;
-	}
+
 }
 @media (min-width: 560px) {
-	.content section:nth-child(1) {
+	.blogfloat {
 		float: left;
 	}
 	footer {
@@ -184,96 +192,53 @@ h1, button, nav, a {
 	}
 }
 @media (min-width: 526px) {
-
+	.floatfoot {
+		float: left;
+	}
 }
 @media (min-width: 380px) {
 	.home {
-	border-top: 2px solid #bd4646;
-	padding: 6px;
-}
-.home:hover {
-	background: #bd4646;
-	transition: all 80ms ease;
-}
-.gallery {
-	border-top: 2px solid #9d46bd;
-	padding: 6px;
-}
-.gallery:hover {
-	background: #9d46bd;
-	transition: all 80ms ease;
-}
-.about {
-	border-top: 2px solid #46bd57;
-	padding: 6px;
-}
-.about:hover {
-	background: #46bd57;
-	transition: all 80ms ease;
-}
-.contact {
-	border-top: 2px solid #ce9100;
-	padding: 6px;
-}
-.contact:hover {
-	background: #ce9100;
-	transtion: all 80ms ease;
-}
-}
-@media (min-width: 380px) {
-	.main li {
-	display: inline-block;
-}
-.main li a{
-	display: inline-block;
-	text-decoration: none;
-	color: #000;
-}
-=======
-.fa-trophy {
-	font-size: 90px;
-	color: #5F96B5;
-	padding: 30px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	margin-bottom: 20px;
-}
-.fa-line-chart {
-	font-size: 90px;
-	color: #5F96B5;
-	padding: 30px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	margin-bottom: 20px;
-}
-.fa-code {
-	font-size: 90px;
-	color: #5F96B5;
-	padding: 30px;
-	-webkit-border-radius: 20px;
-	border-radius: 20px;
-	margin-bottom: 20px;
->>>>>>> origin/master
-}
-
-/*Media Queries */
-
-@media (max-width: 720px) {
-	.floatleft2 {
-		float: none;
-		margin: 0 auto;
+		border-top: 2px solid #bd4646;
+		border-left: none;
+		padding: 6px;
 	}
-	.floatleft {
-		float: none;
+	.home:hover {
+		background: #bd4646;
+		transition: all 80ms ease;
 	}
-}
-@media (max-width: 600px) {
-	.fa {
-		font-size: 2em;
+	.gallery {
+		border-top: 2px solid #9d46bd;
+		border-left: none;
+		padding: 6px;
 	}
-}
-@media (max-width: 550px) {
-	.main {
-		display: block;
+	.gallery:hover {
+		background: #9d46bd;
+		transition: all 80ms ease;
+	}
+	.about {
+		border-top: 2px solid #46bd57;
+		border-left: none;
+		padding: 6px;
+	}
+	.about:hover {
+		background: #46bd57;
+		transition: all 80ms ease;
+	}
+	.contact {
+		border-top: 2px solid #ce9100;
+		border-left: none;
+		padding: 6px;
+	}
+	.contact:hover {
+		background: #ce9100;
+		transtion: all 80ms ease;
+	}
+		.main li {
+		display: inline-block;
+	}
+	.main li a{
+		display: inline-block;
+		text-decoration: none;
+		color: #000;
 	}
 }
