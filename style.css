@@ -18,8 +18,8 @@ body {
 .credit {
 	float: left;
 }
-.social {
-	float: right;
+.social a {
+	display: inline;
 }
 .wrapper {
 	width: 100%;
@@ -36,11 +36,7 @@ h2 {
 	font-family: 'Playfair Display', serif;
 	background: #1e78bd;
 	padding: 5px 20%;
-}
-h3 {
-	font-size: 28px;
-	margin: 10px 0;
-	font-family: 'Playfair Display', serif;
+	color: #fff;
 }
 h4 {
 	font-size: 20px;
@@ -56,9 +52,6 @@ header {
 .headlogo {
 	margin-bottom: -16px;
 }
-i {
-	margin: 0 20%;
-}
 .main {
 	text-align: center;
 	background: #1e78bd;
@@ -72,38 +65,11 @@ i {
 }
 .main ul li:hover {
 	cursor: pointer;
+
 }
 .main ul li a {
 	color: #fff;
 	text-decoration: none;
-}
-.home {
-	border-left: 5px solid #bd4646;
-}
-.home:hover {
-	background: #bd4646;
-	transition: all 80ms ease;
-}
-.gallery {
-	border-left: 5px solid #9d46bd;
-}
-.gallery:hover {
-	background: #9d46bd;
-	transition: all 80ms ease;
-}
-.about {
-	border-left: 5px solid #46bd57;
-}
-.about:hover {
-	background: #46bd57;
-	transition: all 80ms ease;
-}
-.contact {
-	border-left: 5px solid #ce9100;
-}
-.contact:hover {
-	background: #ce9100;
-	transition: all 80ms ease;
 }
 .intro {
 	background: #1e78bd;
@@ -112,6 +78,11 @@ i {
 	text-align: center;
 }
 .content div {
+	margin-top: 20px;
+}
+.aboutcontent {
+	width: 70%;
+	margin: 0 10%;
 	padding-top: 20px;
 }
 .portfolio {
@@ -121,7 +92,7 @@ i {
 	text-align: justify;
 }
 .portfolio div {
-	margin-bottom: -50px;
+
 }
 .blog {
 	width: 80%;
@@ -130,7 +101,7 @@ i {
 	text-align: justify;
 }
 .blog div {
-	margin-bottom: -50px;
+
 }
 footer div {
 	width: 80%;
@@ -140,8 +111,7 @@ footer ul {
 	margin-left: 5px;
 }
 footer ul li {
-	margin: 0 20px;
-	list-style-type: disc;
+	list-style-type: none;
 	padding: 3px 0;
 }
 footer ul li a {
@@ -162,32 +132,96 @@ h1, button, nav {
 .cleardisc {
 	list-style-type: none;
 }
-.fa-wifi {
-	font-size: 120px;
-	background: #1e78bd;
-	color: #fff;
-	padding: 5px 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+.mainphoto {
+	margin-top: 10px;
 }
-.fa-paint-brush {
-	font-size: 120px;
-	background: #1e78bd;
-	color: #fff;
-	padding: 5px 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-}
-.fa-video-camera {
-	font-size: 120px;
-	background: #1e78bd;
-	color: #fff;
-	padding: 5px 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+.photoimg {
+	width: 80%;
+	margin: 10px 0;
+	display: none;
 }
 footer {
 	background: #1e78bd;
+	padding-bottom: 50px;
+}
+.social {
+	width: 40%;
+}
+.contactpage {
+	width: 80%;
+	margin: 0 10%;
+	padding-top: 10px;
+}
+.contactpage h2 {
+	width: 50%;
+}
+.contactinfo {
+	width: 80%;
+	margin: 0 10%;
+}
+.contactinfo fieldset {
+	padding-top: 10px;
+}
+.contacttable tr td {
+	padding: 3px 50px 5px 0px;
+}
+legend {
+	padding: 10px 20px 0;
+}
+.button {
+	margin-top: 20px;
+	font-size: 14px;
+	background: #fefefe; /* Old browsers */
+background: -moz-linear-gradient(top,  #fefefe 0%, #dbdbdb 50%, #d1d1d1 51%, #e2e2e2 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#e2e2e2)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fefefe 0%,#dbdbdb 50%,#d1d1d1 51%,#e2e2e2 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fefefe 0%,#dbdbdb 50%,#d1d1d1 51%,#e2e2e2 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fefefe 0%,#dbdbdb 50%,#d1d1d1 51%,#e2e2e2 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fefefe 0%,#dbdbdb 50%,#d1d1d1 51%,#e2e2e2 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#e2e2e2',GradientType=0 ); /* IE6-9 */
+}
+.fa-facebook-official {
+	font-size: 50px;
+	color: #fff;
+}
+.fa-twitter-square {
+	font-size: 50px;
+	color: #fff;
+}
+.fa-github {
+	font-size: 50px;
+	color: #fff;
+}
+.fa-envelope-square {
+	font-size: 50px;
+	color: #fff;
+}
+.accordion-header {
+	background: #424242;
+	color: #fff;
+	padding: 5px;
+	cursor: pointer;
+}
+.accordion-header:hover {
+	background: #333;
+}
+.accordion-content {
+	background: #eee;
+	padding: 5px;
+	display: none;
+}
+.float {
+	float: left;
+}
+.aboutpic {
+	margin-right: 20px;
+}
+.aboutword {
+	margin-left: 20px;
+}
+.copy {
+	width: 100%;
+	margin: 0 40%;
 }
 @media (min-width: 660px) {
 	.portfolio {
@@ -249,13 +283,16 @@ footer {
 		background: #ce9100;
 		transtion: all 80ms ease;
 	}
-		.main li {
+	.main li {
 		display: inline-block;
 	}
 	.main li a{
 		display: inline-block;
 		text-decoration: none;
 		color: #000;
+	}
+	.photoimg {
+		display: inline-block;
 	}
 	footer {
 		margin-top: 50px;
